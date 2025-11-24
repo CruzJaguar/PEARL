@@ -7,7 +7,7 @@ import numpy as np
 # NOTE: Ensure 'house_price_model.pkl' is in the same directory as this app.py file
 try:
     # Load the entire pipeline (which includes the preprocessor and the model)
-    model = joblib.load("gbr.pkl")
+    model = joblib.load("house_price_model.pkl")
 except FileNotFoundError:
     st.error("Error: 'house_price_model.pkl' not found. Please ensure your saved model file is in the same directory as app.py.")
     st.stop()
